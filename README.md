@@ -1,16 +1,20 @@
 # 長期インターン応募用ポートフォリオ
 
-このリポジトリは、ソフトウェア開発・AI関連の**長期インターン応募用ポートフォリオ**です。  
-GitHub Pagesで公開できるように、ビルド不要の静的サイト（HTML/CSS）で構成しています。
+このリポジトリは、長期インターン応募用のポートフォリオサイトです。  
+HTML / CSSのみで構成した静的サイトとして作成しています。
 
-## GitHub Pages公開URL
-- （公開後に記入）https://<ユーザー名>.github.io/<リポジトリ名>/
+## 公開URL
+- https://portfolio-1g3uoe04b-ryo21cheval07-maxs-projects.vercel.app
 
 ## 掲載プロジェクト
-- JPHACKS 2025仙台「Co-食」: https://github.com/jphacks/sd_2504
-
-## ローカルでの確認方法
-- `index.html` をブラウザで開いて確認してください。
+- Deadline Dungeon
+- Co-食
 
 ## 使用技術
 - HTML / CSS
+
+## ローカル確認方法
+- `index.html` をブラウザで開いて確認してください。
+
+## 連絡先
+- GitHub: https://github.com/ryo21cheval07-max

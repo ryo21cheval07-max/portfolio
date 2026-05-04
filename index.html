@@ -4,65 +4,118 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>渡邊 崚馬 | 長期インターン応募用ポートフォリオ</title>
-  <meta name="description" content="渡邊崚馬の長期インターン応募用ポートフォリオサイト" />
+  <meta name="description" content="渡邊崚馬の長期インターン応募用ポートフォリオ。AI・データサイエンス・Web/モバイル開発の取り組みを紹介。" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="hero">
-    <div class="container">
+    <div class="container hero-inner">
       <p class="label">Long-term Internship Portfolio</p>
       <h1>渡邊 崚馬 <span>/ Ryoma Watanabe</span></h1>
       <p class="affiliation">東北大学大学院 情報科学研究科 応用情報科学専攻 修士1年</p>
+      <p class="intro">AI・データサイエンス・Web/モバイル開発に関心があり、研究・ハッカソン・個人開発を通じて、課題整理から実装・検証・改善まで取り組んでいます。</p>
+      <div class="cta-group">
+        <a class="btn btn-primary" href="#projects">成果物を見る</a>
+        <a class="btn btn-outline" href="https://github.com/ryo21cheval07-max" target="_blank" rel="noopener noreferrer">GitHubを見る</a>
+      </div>
     </div>
   </header>
 
   <main class="container">
-    <section class="card">
-      <h2>自己紹介</h2>
-      <p>AI・データサイエンス・Web/モバイル開発に関心があります。研究やハッカソンを通じて、課題整理、実装、検証、改善に取り組んできました。長期インターンでは、実務の開発プロセス、テスト、運用、改善まで学び、実際に価値を届けられる開発力を身につけたいと考えています。</p>
-    </section>
-
-    <section class="card">
-      <h2>スキル</h2>
-      <ul class="skills">
-        <li>Python</li><li>PyTorch</li><li>Git</li><li>Linux</li><li>Docker</li>
-        <li>TypeScript</li><li>React Native</li><li>Firebase</li><li>Expo</li>
+    <section class="card" id="about">
+      <h2>About / Strength</h2>
+      <ul>
+        <li>曖昧な課題を分解し、仮説を立てて実装・検証する進め方を重視しています。</li>
+        <li>機能を増やすだけでなく、ユーザー体験を意識して優先順位を整理します。</li>
+        <li>生成AIを調査・設計・デバッグに活用しつつ、最終的には自分で動作確認して修正します。</li>
+        <li>チーム開発では、議論を構造化し、次のアクションを明確にして前に進めることを心がけています。</li>
       </ul>
     </section>
 
-    <section class="card">
-      <h2>生成AI活用</h2>
-      <p>ChatGPT、Claude、Codexなどを、調査、設計方針の整理、デバッグ、コード改善に活用しています。ただし、生成AIの提案をそのまま使うのではなく、自分で動作確認し、必要に応じて修正することを大切にしています。</p>
+    <section class="card projects-section" id="projects">
+      <h2>Projects</h2>
+      <p class="section-note">1〜2分で取り組みの全体像が伝わるように、代表的な2件を掲載しています。</p>
+      <div class="projects-grid">
+        <article class="project-card featured">
+          <h3>Deadline Dungeon</h3>
+          <p>締切リスクを可視化する、学生・就活生向けのタスク管理Webアプリです。レポート、ES、Webテスト、研究、面接準備など、複数の締切が重なりやすい学生生活を想定し、「今どのタスクが本当に危険か」を分かりやすくすることを目的に作成しました。</p>
+          <h4>特徴</h4>
+          <ul>
+            <li>締切までの日数、重要度、作業量、進捗率からリスクスコアを算出</li>
+            <li>危険なタスクを「今日のボス」として優先表示</li>
+            <li>タスクをクエストや敵に見立て、進捗を進める体験として表現</li>
+            <li>localStorageを用いてブラウザ内にデータを保存</li>
+          </ul>
+          <h4>使用技術</h4>
+          <p>Next.js / TypeScript / Tailwind CSS / Zustand / Zod / date-fns / Vitest / Vercel</p>
+          <h4>工夫した点</h4>
+          <p>単なるTodoアプリではなく、締切リスクを数値化し、ゲーム風のUIで表現することで、タスクへの着手ハードルを下げる体験を意識しました。また、リスクスコア計算ロジックを分離し、テストしやすい構成を意識しました。</p>
+          <h4>状態</h4>
+          <p>v0.1 MVPとして、主要な操作体験を実装しています。今後は、作業ログ、通知、クラウド同期、AIによるタスク分解提案などを改善したいと考えています。</p>
+          <p class="project-links">
+            <a href="https://deadline-dungeon-2e2p4ybxb-ryo21cheval07-maxs-projects.vercel.app" target="_blank" rel="noopener noreferrer">公開URL</a>
+            <a href="https://github.com/ryo21cheval07-max/deadline-dungeon" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Co-食</h3>
+          <p>JPHACKS 2025仙台で5人チームで開発した、孤食に寂しさを感じる人向けの食事共有アプリです。料理写真の投稿をきっかけに、同じ時間に食事をしている人同士がゆるくつながれる体験を設計しました。</p>
+          <h4>成果</h4>
+          <p>ロート製薬 企業賞を受賞</p>
+          <h4>使用技術</h4>
+          <p>React Native / TypeScript / Firebase / Expo</p>
+          <h4>自分の担当</h4>
+          <p>課題設定、競合との差分整理、議論の構造化、UI改善、実装補助、リファクタリング</p>
+          <h4>工夫した点</h4>
+          <p>単に機能を増やすのではなく、「食事中のどの瞬間にユーザーの気持ちが軽くなるのか」を考え、体験価値を軸に機能を整理しました。</p>
+          <p class="project-links">
+            <a href="https://github.com/jphacks/sd_2504" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </p>
+        </article>
+      </div>
     </section>
 
     <section class="card">
-      <h2>プロジェクト：Co-食</h2>
-      <p>JPHACKS 2025仙台で5人チームで開発した、孤食に寂しさを感じる人向けの食事共有アプリです。料理写真の投稿をきっかけに、同じ時間に食事をしている人同士がゆるくつながれる体験を設計しました。</p>
-      <h3>成果</h3>
-      <p>ロート製薬 企業賞を受賞</p>
-      <h3>使用技術</h3>
-      <p>React Native / TypeScript / Firebase / Expo</p>
-      <h3>自分の担当</h3>
-      <p>課題設定、競合との差分整理、議論の構造化、UI改善、実装補助、リファクタリング</p>
-      <h3>工夫した点</h3>
-      <p>単に機能を増やすのではなく、「食事中のどの瞬間にユーザーの気持ちが軽くなるのか」を考え、体験価値を軸に機能を整理しました。</p>
-      <p><a href="https://github.com/jphacks/sd_2504" target="_blank" rel="noopener noreferrer">GitHub: https://github.com/jphacks/sd_2504</a></p>
+      <h2>スキル（使用経験）</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Programming</h3>
+          <p>Python, TypeScript, JavaScript</p>
+        </div>
+        <div>
+          <h3>AI / Data Science</h3>
+          <p>PyTorch, pandas, scikit-learn</p>
+        </div>
+        <div>
+          <h3>Web / Mobile</h3>
+          <p>Next.js, React Native, HTML, CSS</p>
+        </div>
+        <div>
+          <h3>Backend / DB / Infra</h3>
+          <p>Firebase, localStorage, Docker, Linux</p>
+        </div>
+        <div>
+          <h3>Tools</h3>
+          <p>Git, GitHub, Vercel, ChatGPT, Claude, Codex</p>
+        </div>
+      </div>
     </section>
 
     <section class="card">
       <h2>研究</h2>
-      <p>医療AIが画像と患者情報をどのように使い分けて判断しているかを分析しています。胸部X線画像と短い患者情報を用いて、AIの疾患分類性能や誤り方を評価しています。研究では、データ統合、プロンプト設計、モデル推論、評価指標の算出、統計的検定、可視化、Dockerによる環境整備を経験しました。</p>
-    </section>
-
-    <section class="card">
-      <h2>今後学びたいこと</h2>
-      <p>実務の開発プロセス、チーム開発、テスト、運用、改善を学び、ユーザーやクライアントの課題を理解したうえで価値を届けられるエンジニアとして成長したいです。</p>
+      <h3>研究テーマ</h3>
+      <p>医療AIが画像と患者情報をどのように使い分けて判断しているかを分析しています。</p>
+      <h3>概要</h3>
+      <p>胸部X線画像と、救急外来で記録される短い患者情報を用いて、AIの疾患分類性能や誤り方を評価しています。</p>
+      <h3>経験したこと</h3>
+      <p>データ統合、プロンプト設計、モデル推論、評価指標の算出、統計的検定、可視化、Dockerによる環境整備</p>
+      <p class="note">※ 非公開データや患者情報の詳細は掲載していません。</p>
     </section>
 
     <section class="card">
       <h2>連絡先</h2>
       <ul class="links">
-        <li>Email: <a href="mailto:ryoma.watanabe.2003@gmail.com">ryoma.watanabe.2003@gmail.com</a></li>
         <li>GitHub: <a href="https://github.com/ryo21cheval07-max" target="_blank" rel="noopener noreferrer">https://github.com/ryo21cheval07-max</a></li>
       </ul>
     </section>
